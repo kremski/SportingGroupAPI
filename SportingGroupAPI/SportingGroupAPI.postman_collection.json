@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "c1d57cca-87e9-4238-abbb-33ec03f7db79",
+		"name": "SportingGroupAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Betting",
+					"item": [
+						{
+							"name": "/api/Betting",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"fixtureId\": 1,\n    \"betResultId\": 2\n  },\n  {\n    \"fixtureId\": 2,\n    \"betResultId\": 3\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Betting",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Betting"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n  {\n    \"fixtureId\": 25682552,\n    \"betResultId\": 49899401\n  },\n  {\n    \"fixtureId\": 64334805,\n    \"betResultId\": 2872182\n  }\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Betting",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Betting"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Betting/:id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Betting/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Betting",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Betting/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Betting",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-20961430",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"betId\": 97422314,\n  \"betFixtures\": [\n    {\n      \"fixture\": {\n        \"id\": 30213841,\n        \"hostTeam\": {\n          \"id\": -36245922,\n          \"name\": \"esse eu aute\"\n        },\n        \"guestTeam\": {\n          \"id\": 55614469,\n          \"name\": \"et la\"\n        },\n        \"wasPlayed\": false,\n        \"resultId\": 79929855,\n        \"result\": {\n          \"id\": -86227155,\n          \"name\": \"irure labore anim\"\n        }\n      },\n      \"betResult\": {\n        \"id\": 94487112,\n        \"name\": \"consectetur ea\"\n      },\n      \"betFixtureOutcome\": \"dolor mollit ad\"\n    },\n    {\n      \"fixture\": {\n        \"id\": -56483247,\n        \"hostTeam\": {\n          \"id\": -10015199,\n          \"name\": \"ea Lorem irure\"\n        },\n        \"guestTeam\": {\n          \"id\": 27548502,\n          \"name\": \"cillum veniam\"\n        },\n        \"wasPlayed\": false,\n        \"resultId\": -31915083,\n        \"result\": {\n          \"id\": 25642374,\n          \"name\": \"consectetur\"\n        }\n      },\n      \"betResult\": {\n        \"id\": -84393741,\n        \"name\": \"dolor dolore eiusmod ea\"\n      },\n      \"betFixtureOutcome\": \"sit ex\"\n    }\n  ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Fixture",
+					"item": [
+						{
+							"name": "/api/Fixture",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Fixture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Fixture"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Fixture",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Fixture"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -62674741,\n    \"hostTeam\": {\n      \"id\": -79316701,\n      \"name\": \"laborum do elit\"\n    },\n    \"guestTeam\": {\n      \"id\": -50517969,\n      \"name\": \"consectetur commodo pariatur in\"\n    },\n    \"wasPlayed\": true,\n    \"resultId\": 11107166,\n    \"result\": {\n      \"id\": -17874746,\n      \"name\": \"in esse exercitation Excepte\"\n    }\n  },\n  {\n    \"id\": 65954891,\n    \"hostTeam\": {\n      \"id\": -96780621,\n      \"name\": \"et minim aliqua esse\"\n    },\n    \"guestTeam\": {\n      \"id\": -50596268,\n      \"name\": \"ut Excepteur in sunt sed\"\n    },\n    \"wasPlayed\": true,\n    \"resultId\": 44290266,\n    \"result\": {\n      \"id\": 7049379,\n      \"name\": \"eiusmod nisi cillum\"\n    }\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Fixture",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"guestTeamId\": 2,\n  \"hostTeamId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Fixture",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Fixture"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"guestTeamId\": 11717650,\n  \"hostTeamId\": -74785579\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Fixture",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Fixture"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Fixture/:id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Fixture/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Fixture",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Fixture/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Fixture",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-20961430",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": -573586,\n  \"hostTeam\": {\n    \"id\": 26744213,\n    \"name\": \"Duis officia\"\n  },\n  \"guestTeam\": {\n    \"id\": -77207924,\n    \"name\": \"reprehend\"\n  },\n  \"wasPlayed\": false,\n  \"resultId\": 44259901,\n  \"result\": {\n    \"id\": 80498686,\n    \"name\": \"nostrud Lorem cupidatat sed anim\"\n  }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7062",
+			"type": "string"
+		}
+	]
+}
